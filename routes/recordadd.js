@@ -36,8 +36,8 @@ router.post('/', function(req, res, next) {
 
 	console.log(cmd);
 
-	const execFile = require('child_process').execFile;
-	const child = execFile('dnscmd', cmd.split("\s+"), (error, stdout, stderr) => {
+	const exec = require('child_process').exec;
+	const child = exec('dnscmd '+cmd, (error, stdout, stderr) => {
 		var result_json = { stdout:"", stderr:"", error:""};
 
 		result_json.error= error;
