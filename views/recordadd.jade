@@ -1,0 +1,51 @@
+:markdown-it
+	# /recordadd - wrapper for the dnscmd command /recordadd
+	|				 |                  |
+	|----------------|------------------|
+	| Method:        | POST             |
+	| content-type : | application/json |
+
+	
+	Example: 
+	```javascript
+		{
+	 	"serverName" : "localhost",
+	 	"zoneName" : "tld.com",
+	 	"nodeName" : "sas",
+	 	"rrType": "A",
+	 	"rrData": "10.0.0.5"
+		}
+	```
+	> This will translate to the following dnscmd command
+	```
+		dnscmd localhost /recordadd tld.com sas A 10.0.0.5
+	```
+
+	* serverName - Specifies the DNS server to manage, represented by local computer syntax, 
+		IP address, FQDN, or host name. If this parameter is omitted, the local server is used.
+	* zoneName - Specifies the zone in which the record resides.
+	* nodeName - Specifies a specific node in the zone.
+	* rrType  - Specifies the type of record to be added. (e.g A, AAA, MX etc)
+	* rrData - the actual record (e.g ip address)
+	> 
+	> **All fields are mandatory**
+	>
+
+	Returns:
+	```json
+		{
+			"stdout": "",
+			"stderr": "",
+			"error": {
+				"code": "ENOENT",
+				"errno": "ENOENT",
+				"syscall": "spawn dnscmd",
+				"path": "dnscmd",
+				"spawnargs": ["localhost /recordadd tld.com sas A 10.0.0.5"],
+				"cmd": "dnscmd localhost /recordadd tld.com sas A 10.0.0.5"
+			}
+		}
+	```
+	* stdout  - the stdout of the executed dnscmd command
+	* stderr  - the stderr of the executed command
+	* error   - other errors

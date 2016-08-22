@@ -1,0 +1,9 @@
+{
+	"general" : {
+		"httpPort" : 3000,
+		"httpsPort": 3001,
+		"privateKey" : "sslcerts/msdnsjs-key.pem",
+		"certificate" : "sslcerts/msdnsjs-cert.pem",
+		"passwdFile" : "config/passwd"
+	}
+}
