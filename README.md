@@ -2,7 +2,7 @@
 A simple rest api wrapper for dnscmd /recordadd and /recorddelete command with ssl and authentication support
 
 #Install
-First install nodejs. Than either clone the repo or download the zip file and unpazk.
+First install nodejs. Than either clone the repo or download the zip file and unpack.
 ```
 git clone https://github.hpe.com/alexander-jelyazkov/msdnsjs.git
 
