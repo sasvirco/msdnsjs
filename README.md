@@ -37,7 +37,7 @@ Configuration is done via the node-config so all node-config rules apply - you c
 
 Example:
 
-```
+```json
 {
 	"general" : {
 		"httpPort" : 3000,
