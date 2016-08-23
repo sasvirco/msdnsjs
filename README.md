@@ -56,3 +56,6 @@ node app.js
 ```
 Or if you want to make a windows service out of it you can use http://nssm.cc/usage.
 Make sure you run the app with the user that is allowed to run the dnscmd command and add domain entries.
+
+#Usage
+Go to https://youripaddress:3001/recordadd or https://youripaddress:3001/recorddelete with a browser and see the help file provided.
