@@ -41,7 +41,7 @@ router.post('/', function(req, res, next) {
 		var result_json = { stdout:"", stderr:"", error:""};
 
 		result_json.error= error;
-		result_json.stdout = stdout
+		result_json.stdout = stdout;
 		result_json.stderr = stderr;
 		res.json(result_json);
 	});

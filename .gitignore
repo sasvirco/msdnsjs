@@ -1,1 +1,3 @@
 *.log
+.vscode/.browse.VC.db
+jsconfig.json
