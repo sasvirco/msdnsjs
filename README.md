@@ -1,7 +1,7 @@
 # msdnsjs
 A simple rest api wrapper for dnscmd /recordadd and /recorddelete command with ssl and authentication support
 
-#Install
+# Install
 First install nodejs. Than either clone the repo or download the zip file and unpack.
 ```
 git clone https://github.com/sasvirco/msdnsjs.git
